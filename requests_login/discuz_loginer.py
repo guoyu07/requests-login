@@ -1,4 +1,5 @@
 from requests_login.loginer import Loginer
+import logging
 
 
 class DiscuzLoginer(Loginer):
@@ -10,6 +11,9 @@ class DiscuzLoginer(Loginer):
 
     @staticmethod
     def _validate(response):
-        if 'succeed' in response.text:
-            return True
-        return False
+        """Validate if login is successful."""
+        logging.debug(response.text)
+
+        if 'error' in response.text:
+            return False
+        return True

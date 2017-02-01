@@ -14,10 +14,10 @@ class Loginer:
         data = dict(self._data)
         data.update(user)
 
-        response = requests.post(url, data=data)
+        response = requests.post(url, data=data, allow_redirects=True)
         return response.cookies if self._validate(response) else None
 
     @staticmethod
     def _validate(response):
-        """Validate login is successful."""
+        """Validate if login is successful."""
         return True
