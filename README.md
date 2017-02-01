@@ -6,7 +6,7 @@ Simple way for logging in any forums or websites based on requests
 
 - [Discuz](http://www.discuz.net/forum.php) support
 
-## Geting Started
+## Getting Started
 
 - Login forums powered by Discuz
 
