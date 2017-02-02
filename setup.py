@@ -15,7 +15,7 @@ setup(
     author='jxltom',
     author_email='jxltom@gmail.com',
     license='MIT',
-    keywords="hello world example examples",
+    keywords='login requests cookies forum discuz',
     url='https://github.com/jxltom/requests-login/',
     description='Simple way for logging in any forums or websites '
                 'based on requests',
