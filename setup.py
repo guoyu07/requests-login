@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 _version_re = r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]'
 
-with open('requests/__init__.py', 'r') as f:
+with open('requests-login/__init__.py', 'r') as f:
     version = re.search(_version_re, f.read(), re.MULTILINE).group(1)
 
 setup(
