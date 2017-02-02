@@ -15,12 +15,12 @@ Simple way for logging in any forums or websites based on requests
     cookies = DiscuzLoginer()('http://example.com', user=dict(username='username', password='password'))
     ```
     
-- Customized Login
+- Customized login
 
     ```python
     from requests_login.loginer import Loginer
     query = '/member.php?mod=logging&action=login&loginsubmit=yes&inajax=1'
-    data = dict(loginfield='usernmae', questionid='0')
+    data = dict(loginfield='username', questionid='0')
     cookies = Loginer(query, data)('http://example.com', user=dict(username='username', password='password'))
     ```
 
