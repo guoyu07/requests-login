@@ -3,14 +3,14 @@ import requests
 
 class Loginer:
 
-    def __init__(self, query=None, data=None):
+    def __init__(self, login_route=None, data=None):
         """Init variables for login."""
-        self._query = query if query else ''
+        self._login_route = login_route if login_route else ''
         self._data = data if data else {}
 
     def __call__(self, baseurl, user):
         """Return login cookies."""
-        url = baseurl + self._query
+        url = baseurl + self._login_route
         data = dict(self._data)
         data.update(user)
 
